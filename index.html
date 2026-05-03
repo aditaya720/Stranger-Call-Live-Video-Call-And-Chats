@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stranger Call - Live Video Call & Chat</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+header {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4b2b;
+    color: white;
+    cursor: pointer;
+}
+</style>
+
+<script>
+function showSection(id) {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("privacy").style.display = "none";
+    document.getElementById("terms").style.display = "none";
+
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Stranger Call</h1>
+    <p>Live Video Call & Chat App</p>
+
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('privacy')">Privacy Policy</button>
+    <button onclick="showSection('terms')">Terms</button>
+</header>
+
+<div class="container">
+
+<!-- HOME -->
+<div id="home" class="card">
+    <h2>About App</h2>
+    <p>Stranger Call is a real-time video calling and chatting app that connects you with people from around the world.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Random Video Call</li>
+        <li>Live Chat Messaging</li>
+        <li>Safe & Secure Matching</li>
+        <li>User Friendly Interface</li>
+        <li>High Quality Video & Audio</li>
+    </ul>
+
+    <h2>Why Choose Us?</h2>
+    <p>We provide fast, secure, and exciting connections with strangers worldwide using advanced matching technology.</p>
+</div>
+
+<!-- PRIVACY POLICY -->
+<div id="privacy" class="card" style="display:none;">
+    <h2>Privacy Policy</h2>
+
+    <p>Stranger Call respects your privacy. This policy explains how we collect and use information.</p>
+
+    <h3>Information We Collect</h3>
+    <ul>
+        <li>Device Information</li>
+        <li>Usage Data</li>
+        <li>Camera & Microphone Access (for video calling)</li>
+    </ul>
+
+    <h3>How We Use Information</h3>
+    <ul>
+        <li>To provide video calling service</li>
+        <li>To improve user experience</li>
+        <li>To show ads (Google AdMob)</li>
+    </ul>
+
+    <h3>Third Party Services</h3>
+    <p>We use Google AdMob which may collect data to serve better ads.</p>
+
+    <h3>Security</h3>
+    <p>Your data is protected and not sold to third parties.</p>
+
+    <h3>Consent</h3>
+    <p>By using our app, you agree to this privacy policy.</p>
+
+    <p>Contact: support@strangercall.com</p>
+</div>
+
+<!-- TERMS -->
+<div id="terms" class="card" style="display:none;">
+    <h2>Terms & Conditions</h2>
+
+    <p>By using Stranger Call, you agree to the following terms:</p>
+
+    <ul>
+        <li>You must be 18+ to use this app</li>
+        <li>No illegal or harmful activity allowed</li>
+        <li>No harassment or abuse</li>
+        <li>We can suspend accounts if rules are broken</li>
+    </ul>
+
+    <h3>Usage Rules</h3>
+    <p>Users must respect others and maintain proper behavior during calls and chats.</p>
+
+    <h3>Changes</h3>
+    <p>We may update these terms anytime.</p>
+</div>
+
+</div>
+
+<footer>
+    © 2026 Stranger Call App | All Rights Reserved
+</footer>
+
+</body>
+</html>
